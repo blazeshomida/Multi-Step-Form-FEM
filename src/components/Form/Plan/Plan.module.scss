@@ -1,0 +1,10 @@
+@use '@/styles' as *;
+
+.plan {
+    display: grid;
+    gap: 1rem;
+
+    @include break(lg) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

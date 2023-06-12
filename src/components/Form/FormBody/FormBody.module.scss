@@ -1,0 +1,40 @@
+@use "@/styles" as *;
+
+.form-body {
+	padding-block: 2rem;
+	background-color: var(--clr-white);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	@include break(lg) {
+		width: 100%;
+		padding-inline: 6rem;
+	}
+}
+
+.heading {
+	color: var(--clr-denim);
+	font-size: var(--fs-700);
+	font-weight: var(--fw-bold);
+	margin-bottom: 0.75rem;
+}
+
+.description {
+	margin-bottom: 2.5rem;
+}
+
+.button-group {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	display: grid;
+	grid-auto-flow: column;
+	width: 100%;
+	background-color: var(--clr-white);
+
+	@include break(lg) {
+		position: relative;
+	}
+}

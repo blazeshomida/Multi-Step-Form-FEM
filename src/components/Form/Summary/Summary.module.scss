@@ -1,0 +1,53 @@
+@use '@/styles' as *;
+
+.summary {
+    display: grid;
+    background-color: var(--clr-light-grey);
+    padding: 1rem;
+    border-radius: .5rem;
+
+}
+
+.addons-group {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.plan-group {
+    border-bottom: 1px solid rgba(150, 153, 170, .2);
+}
+
+.addon, .plan-group, .total-group {
+    display: grid;
+    grid-template-columns: auto min-content;
+    gap: 1rem;
+}
+
+.plan-name {
+    color: var(--clr-denim);
+    font-weight: var(--fw-medium);
+}
+
+.plan-cost, .total-cost {
+    color: var(--clr-denim);
+    font-weight: var(--fw-bold);
+}
+
+.total-cost {
+    font-size: var(--fs-600);
+}
+
+.plan-link {
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--clr-denim);
+    }
+}
+
+.total-group {
+    padding: 1rem;
+}

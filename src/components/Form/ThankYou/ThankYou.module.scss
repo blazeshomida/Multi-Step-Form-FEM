@@ -1,0 +1,25 @@
+.thank-you-group {
+    display: grid;
+    place-content: center;
+    max-width: 35rem;
+    text-align: center;
+    margin-inline: auto;
+    gap: 1rem;
+    padding-block: 6rem;
+    
+
+    h1 {
+        color: var(--clr-denim);
+        font-weight: var(--fw-bold);
+    }
+
+
+    p {
+        line-height: 1.5;
+    }
+
+    svg {
+        margin-inline: auto;
+        margin-bottom: 1rem;
+    }
+}

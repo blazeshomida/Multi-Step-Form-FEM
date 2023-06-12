@@ -1,0 +1,17 @@
+@use "@/styles" as *;
+
+.form {
+	display: grid;
+	border-radius: 1rem;
+	background: var(--clr-white);
+    padding: 1rem;
+    margin-inline: 1rem;
+    margin-top: -1rem;
+
+	@include break(lg) {
+		margin: 0;
+		width: 100%;
+		max-width: 66rem;
+        grid-template-columns: max-content auto;
+	}
+}

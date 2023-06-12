@@ -1,0 +1,22 @@
+@use 'variables' as *;
+
+@mixin break($user-size) {
+    $is-custom-breakpoint: true;
+  
+    @each $size, $value in $breakpoints {
+      @if (#{$user-size} == #{$size}) {
+        $is-custom-breakpoint: false;
+  
+        @media (min-width: #{$value}) {
+          @content;
+        }
+      }
+    }
+  
+    @if ($is-custom-breakpoint) {
+      @media (min-width: #{$user-size}) {
+        @content;
+      }
+    }
+  }
+  

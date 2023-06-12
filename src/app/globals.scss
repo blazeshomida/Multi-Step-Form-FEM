@@ -1,0 +1,44 @@
+@use "@/styles" as *;
+
+:root {
+	@each $name, $value in $variables {
+		--#{$name}: #{$value};
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body, main {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+    background: var(--clr-background);
+    color: var(--clr-grey);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-400);
+    overflow: auto;
+	display: flex;
+	place-content: center;
+	place-items: center;
+}
+
+main {
+	display: flex;
+	place-content: center;
+	align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	overflow-wrap: break-word;
+}
+

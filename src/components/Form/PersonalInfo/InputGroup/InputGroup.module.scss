@@ -1,0 +1,61 @@
+@use "@/styles" as *;
+
+.input-group {
+	label {
+		color: var(--clr-denim);
+		margin-bottom: 0.5rem;
+		display: flex;
+		justify-content: space-between;
+
+		&.invalid::after {
+			content: "This field is required";
+			color: red;
+			font-size: var(--fs-200);
+			font-weight: var(--fw-bold);
+
+			animation: invalid 700ms ease-in-out;
+		}
+	}
+	input {
+		width: 100%;
+		height: 3rem;
+		border-radius: 0.5rem;
+		border: 1px solid var(--clr-border);
+		padding: 0.75rem 1rem;
+
+		&::placeholder {
+			color: var(--clr-grey);
+		}
+
+		&:focus-visible {
+			outline: 1px solid var(--clr-blue);
+		}
+		&.invalid {
+			animation: invalid 700ms ease-in-out;
+
+			&:not(:focus-visible) {
+				outline: 1px solid red;
+			}
+		}
+	}
+}
+
+@keyframes invalid {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(0.5rem);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(-0.5rem);
+	}
+}

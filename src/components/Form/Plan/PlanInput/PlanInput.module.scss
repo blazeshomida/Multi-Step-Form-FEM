@@ -1,0 +1,42 @@
+@use '@/styles' as *;
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    border: 1px solid var(--clr-border);
+    border-radius: 8px;
+
+    @include break(lg) {
+        display: grid;
+        gap: 3rem;
+        padding-right: 4rem;
+    }
+
+    &:hover {
+		border: 1px solid var(--clr-blue);
+	}
+}
+
+.plan-name {
+    font-weight: var(--fw-bold);
+    color: var(--clr-denim);
+}
+.plan-group {
+    display: grid;
+    gap: .5rem;
+}
+
+.selected {
+    border-color: var(--clr-blue);
+    background-color: var(--clr-light-grey);
+}
+
+.yearly-plan::after {
+    content: '2 Months Free';
+    margin-top: .5rem;
+    display: block;
+    font-size: var(--fs-100);
+    color: var(--clr-denim);
+}

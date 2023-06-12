@@ -1,0 +1,59 @@
+@use "@/styles" as *;
+
+.card {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: min-content auto min-content;
+	gap: 1rem;
+	border: 1px solid var(--clr-border);
+	padding: 0.75rem;
+	border-radius: 0.5rem;
+	align-items: center;
+    cursor: pointer;
+
+	&:hover {
+		border: 1px solid var(--clr-blue);
+	}
+
+}
+
+.selected {
+    border: 1px solid var(--clr-blue);
+    background-color: var(--clr-light-grey);
+
+    .checkbox {
+        background-color: var(--clr-blue);
+    }
+
+    .price-selected {
+        color: var(--clr-blue);
+    }
+    
+}
+
+.checkbox {
+	border: 1px solid var(--clr-border);
+	width: 1.25rem;
+	aspect-ratio: 1;
+	border-radius: 0.25rem;
+	display: grid;
+	place-content: center;
+
+    
+}
+
+.add-on-group {
+	display: grid;
+	text-align: left;
+	justify-content: start;
+	gap: 0.25rem;
+}
+
+.add-on-name {
+	font-size: var(--fs-200);
+	color: var(--clr-denim);
+}
+
+.add-on-description {
+	font-size: var(--fs-100);
+}
