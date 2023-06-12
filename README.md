@@ -44,8 +44,8 @@ Despite the challenges, this project was a valuable opportunity to gain confiden
 
 ### Links
 
-- Solution URL: [View solution URL here](https://your-solution-url.com)
-- Live Site URL: [View live site URL here](https://your-live-site-url.com)
+- Solution URL: [View solution URL here](https://www.frontendmentor.io/solutions/multistep-form-0kksILWUer)
+- Live Site URL: [View live site URL here](https://multi-step-form-fem-iota.vercel.app/)
 
 ## My process
 
