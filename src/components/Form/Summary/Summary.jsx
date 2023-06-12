@@ -42,8 +42,8 @@ const Summary = ({ formInfo, data, setActivePage }) => {
 					</a>
 				</div>
 				<div className={Styles["addons-group"]}>
-					{selectedAddOnsData.map((addOn) => (
-						<div className={Styles["addon"]}>
+					{selectedAddOnsData.map((addOn, index) => (
+						<div key={index} className={Styles["addon"]}>
 							<p>{addOn.name}</p>
 							<p>
 								${addOn[planType]}/{planType === "monthly" ? "mo" : "yr"}
