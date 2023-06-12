@@ -27,7 +27,7 @@ const PlanInput = ({
 		<div onClick={selectPlan} key={key} className={`${Styles["card"]} ${
 			selectedPlan === name ? Styles["selected"] : ''
 		}`}>
-			<Image src={icon} width={40} height={40} />
+			<Image src={icon} width={40} height={40} alt=""/>
 			<div className={Styles["plan-group"]}>
 				<p className={Styles["plan-name"]}>{name}</p>
 				<p className={isMonthly === false ? Styles['yearly-plan'] : ''}>
