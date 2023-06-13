@@ -108,12 +108,9 @@ const Sidebar = ({ activePage, data }) => {
 				{steps.map((step, index) => (
 					<li
 						key={index}
-						aria-labelledby={index}
 						className={`${activePage === index && Styles["active"]} ${
 							Styles["step-group"]
 						}`}
-						role="button"
-						tabIndex="0"
 					>
 						<p id={index} className={Styles["step-detail"]}>
 							<span className={Styles["step"]}>Step {index + 1}</span>
