@@ -1,4 +1,4 @@
-# Frontend Mentor - Multi-step form solution <!-- omit from toc -->
+# Multi-step form <!-- omit from toc -->
 
 This project is a multi-step form with form validation, created as a challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ). The goal was to build a form that not only collects and validates user input, but also dynamically changes based on the user's selections. This project was a significant challenge due to the complexity of managing state across multiple steps and rendering different form elements based on user input. 
 
